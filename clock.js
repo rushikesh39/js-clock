@@ -20,6 +20,7 @@ function clockStart(){
     let minutes=time.getMinutes();
     let seconds=time.getSeconds();
 
+    
     if (hours>=6 && hours < 12){
         settext.innerText = "GRAB SOME HEALTHY BREAKFAST!!!";
       
