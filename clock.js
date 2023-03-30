@@ -22,19 +22,19 @@ function clockStart(){
 
     if (hours>=6 && hours < 12){
         settext.innerText = "GRAB SOME HEALTHY BREAKFAST!!!";
-        img.src="./Component 30 – 1.png";
+      
     } 
     else if (hours>=12 && hours < 15){
         settext.innerText = "LET'S HAVE SOME LUNCH !!";
-        img.src="./Component 31 – 1.svg";
+        
     }
     else if (hours>=15 && hours <19){
         settext.innerText = "STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!!!";
-        img.src="./lunch_image@2x.png";
+       
     }
     else{
         settext.innerHTML = "CLOSE YOUR EYES AND GO TO SLEEP";
-        img.src="./Component 32 – 1@2x.png";
+   
     }
     
     if(hours>12){
