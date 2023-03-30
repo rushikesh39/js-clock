@@ -131,7 +131,7 @@ button.addEventListener('click' ,() =>{
     let nap_value = nap.options[nap.selectedIndex].textContent;
     span3.textContent = nap_value;
 
-    let night_value = night.options[wakeup.selectedIndex].textContent;
+    let night_value = night.options[night.selectedIndex].textContent;
     span4.textContent = night_value;
 })
 
