@@ -23,6 +23,9 @@ body{
     padding: 25px;
     
 }
+.none{
+    display: none;
+}
 .logo img{
     width: 204px;
     height: 77px;
@@ -134,13 +137,18 @@ button{
     background: url(./timeline.svg);
     text-align: center;
 }
-.time .am{
+.time #ampm,#ampm1{
     background:url(./AM_svg.svg);
     /* padding-top: 20px; */
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 3px;
+}
+.hours, .min, .sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .timecontainer{
     position: relative;
@@ -199,15 +207,41 @@ button{
 img{
     width: 100%;
 }
+.display{
+    display: flex;
+    width: 566px;
+    margin-top: 10px;
+}
+.shedul {
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    width: 45%;
+    color:#F25CFE;
+    background-color: #8A11BF;
+}
+
 @media (max-width:1192px) {
+    .none{
+        display: flex;
+        width: 566px;
+        margin-top: 10px;
+    }
     .subcontainer{
         margin-top: 40px;
+      }
+      .display{
+        display: none;
       }
     
 }
 @media (max-width:550px) {
-    .main{
-    
+    .none{
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
     }
   .container1{
     width: 90%;
@@ -224,6 +258,7 @@ img{
   .subcontainer{
     margin-top: 40px;
   }
+  
 
     
 }
