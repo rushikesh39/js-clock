@@ -21,6 +21,7 @@ body{
     flex-wrap: wrap;
     width: 566px;
     padding: 25px;
+    padding-top:10px;
     
 }
 .none{
@@ -37,7 +38,7 @@ body{
     
 }
 .setTime p{
-    font-size: 33px;
+    font-size: 20px;
     margin: 10px;
     margin-left: 10px;
 }
@@ -47,9 +48,9 @@ body{
     background-color: white;
     width: 100%;
     height: auto;
-    padding: 24px;
+    padding: 15px;
     border-radius: 10px;
-    margin: 38px 0px 16px 0px;
+    margin: 10px 0px 16px 0px;
     box-sizing: content-box;
 }
 .item{
@@ -214,6 +215,7 @@ img{
 }
 .shedul {
     margin-left: 10px;
+    margin-top: -10px;
     border-radius: 10px;
     padding: 10px;
     padding-left: 15px;
@@ -221,6 +223,19 @@ img{
     width: 45%;
     color:#F25CFE;
     background-color: #8A11BF;
+    line-height: 5px;
+}
+p#hour,p#minute,p#seconds,p#hour1,p#minute1,p#seconds1 {
+    font-size: 30px;
+    margin: 0px;
+    margin-top:5px;
+}
+.hours, .min, .sec{
+    display: flex;
+    flex-direction: column;
+}
+.hours p,.min p,.sec p{
+    margin: 0;
 }
 
 @media (max-width:1192px) {
@@ -257,6 +272,21 @@ img{
   }
   .subcontainer{
     margin-top: 40px;
+  }
+  .shedul{
+    margin: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+  #button{
+    width: 100%;
+    border-radius: 10px;
+  }
+  .button{
+    width: 100%;
+  }
+  .breakfast{
+    margin-top: -45px;
   }
   
 
